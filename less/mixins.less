@@ -1,20 +1,25 @@
 /* Button */
-.button() {
+.button(@w: 28%; @pt: 2%; @pb: 2%) {
     border: 1px solid @btn-bg-color;
     background-color: @btn-bg-color;
     color: @porcelain;
     display: flex;
-    width: 28%;
+    width: @w;
     justify-content: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: @pt;
+    padding-bottom: @pb;
     font-size: 1.8rem;
     border-radius: 7px;
 
-    @media @mobile {
+    @media @phone {
         width: 100%;
         padding-top: 5%;
         padding-bottom: 5%;
         border-radius: 5px;
     }
+}
+
+.flexbox(@j: center) {
+    display: flex;
+    justify-content: @j;
 }
