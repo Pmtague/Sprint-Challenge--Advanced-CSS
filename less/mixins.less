@@ -27,3 +27,17 @@
     display: flex;
     justify-content: @j;
 }
+
+.animate-key() {
+    @keyframes title {
+        0% {color: @ebony-clay;}
+        50% {color: grey;}
+        100% {color: @ebony-clay;}
+      }
+}
+
+.animate() {
+    animation-name: title;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
