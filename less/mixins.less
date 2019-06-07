@@ -1,1 +1,43 @@
-// Mixins Here
+/* Button */
+.button(@w: 28%; @pt: 2%; @pb: 2%) {
+    border: 1px solid @btn-bg-color;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    display: flex;
+    width: @w;
+    justify-content: center;
+    padding-top: @pt;
+    padding-bottom: @pb;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    &:hover {
+        color: @btn-bg-color;
+        background-color: @porcelain;
+    }
+
+    @media @phone {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 5px;
+    }
+}
+
+.flexbox(@j: center) {
+    display: flex;
+    justify-content: @j;
+}
+
+.animate-key() {
+    @keyframes title {
+        0% {color: @ebony-clay;}
+        50% {color: grey;}
+        100% {color: @ebony-clay;}
+      }
+}
+
+.animate() {
+    animation-name: title;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
