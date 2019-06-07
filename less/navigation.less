@@ -2,23 +2,28 @@
 
 .animate-key();
 
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    padding: 2rem;
-    color: @ebony-clay;
-    .animate();
-    }
+
 
 .navigation {
 
     .flexbox();
     font-size: 1.6rem;
+    flex-direction: column;
 
-    nav {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 2rem;
+        color: @ebony-clay;
+        .animate();
+        }
+
+    ul {
         padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
 
-        a {
+        a.space-nav {
             text-decoration: none;
             color: @river-bend;
             padding: 1.3rem;

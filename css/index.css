@@ -175,7 +175,13 @@ p {
     color: #23293B;
   }
 }
-h1 {
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-direction: column;
+}
+.navigation h1 {
   font-size: 4rem;
   text-align: center;
   padding: 2rem;
@@ -184,15 +190,12 @@ h1 {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-.navigation {
+.navigation ul {
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
 }
-.navigation nav {
-  padding-bottom: 1rem;
-}
-.navigation nav a {
+.navigation ul a.space-nav {
   text-decoration: none;
   color: #454A59;
   padding: 1.3rem;
